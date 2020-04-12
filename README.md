@@ -5,9 +5,9 @@ E-Mail: diego@suportecavalcante.com.br\
 Telegram: @diego_cavalcante\
 Zabbix Share: [https://share.zabbix.com/owner/diegocavalcante](https://share.zabbix.com/owner/diegocavalcante)
 
-Repositório público de templates, scripts, confs e materiais relacionados com monitoramento "ZABBIX"
+Публичный репозиторий шаблонов, скриптов, конфов и материалов, связанных с мониторингом «ZABBIX»
 
-OBS: Para detalhes sobre o uso de cada monitoramento, consulte o arquivo LEIA-ME.pdf
+ПРИМЕЧАНИЕ. Подробнее об использовании каждого мониторинга см. Файл README.pdf.
 
 # ° LINUX
 
