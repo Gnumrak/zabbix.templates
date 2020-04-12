@@ -1,21 +1,21 @@
-# Desenvolvido por Diego Cavalcante - 06/12/2017
-# Monitoramento Windows SQLServer
-# Vers�o: 1.1.0
-# Cria��o = Vers�o 1.0.0 29/08/2017 (Script B�sico).
-# Update  = Vers�o 1.1.0 02/01/2018 (Obrigado @bernardolankheet, JOBSTATUS Retornava N = 5 Nunca Executado).
+# Разработано Diego Cavalcante - 06/12/2017
+# Мониторинг Windows SQLServer
+# Версия: 1.1.0
+# Создан = Версия 1.0.0 29.08.2017 (базовый сценарий).
+# Обновление = Версия 1.1.0 01/02/2018 (Спасибо @bernardolankheet, JOBSTATUS вернул N = 5 Никогда не запускался).
 
-# Parametros
+# Параметры
 
 Param(
   [string]$select,
   [string]$2
 )
 
-# Login SQLSERVER
+# Логин SQLSERVER
 $usuario = "sqlusuario"
 $senha   = "sqlsenha"
 
-# Monta JSON com o nome de todas as databases. 
+# Создаем JSON с именем всех баз данных.
 if ( $select -eq 'JSONDB' ) 
 {
 $database = sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;SELECT name FROM master..sysdatabases"
@@ -41,13 +41,13 @@ write-host " ]"
 write-host "}"
 } 
 
-# Verifica o status da database.
+# Проверка состояния базы данных.
 if ( $select -eq 'STATUS' )
 {
 sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;SELECT coalesce(max(state),7) from sys.databases where name = '$2'"
 }
 
-# Verifica o numero de conex�es na database.
+# Проверка количества соединений в базе данных.
 if ( $select -eq 'CONN' )
 {
 sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;DECLARE @AllConnections TABLE(
@@ -69,7 +69,7 @@ INSERT INTO @AllConnections EXEC sp_who2
 SELECT count(*) FROM @AllConnections WHERE DBName = '$2'"
 }
 
-# Monta JSON com o nome de todos os jobs.
+# Создаем JSON с названием всех заданий.
 if ( $select -eq 'JSONJOB' )
 {
 $jobname = sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;SELECT [name] FROM msdb.dbo.sysjobs"
@@ -95,7 +95,7 @@ write-host " ]"
 write-host "}"
 }
 
-# Verifica status do ultimo job executado.
+# Проверка статуса последнего запуска задания.
 if ( $select -eq 'JOBSTATUS' )
 {
 sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;WITH last_hist_rec AS
@@ -122,7 +122,7 @@ AND hist.RowNum = 1
 WHERE jobs.name = '$2'" | % {$_.substring($_.length-1) -replace ''} | ForEach-Object {$_ -Replace "N", "5"}
 }
 
-# Verifica vers�o do SQLServer.
+# Проверка версии SQLServer.
 if ( $select -eq 'VERSAO' )
 {
 sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;SELECT
