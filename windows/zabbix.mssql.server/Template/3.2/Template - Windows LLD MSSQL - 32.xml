@@ -80,7 +80,7 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Porta</name>
+                    <name>Порт</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -120,7 +120,7 @@
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ СТАТУС ★ Проверка Порта</name>
+                        <name>★ СОСТОЯНИЕ ★ Проверка Порта</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -946,7 +946,7 @@ Nome: SQL Server Integration Services 10.0&#13;
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Служба</name>
+                        <name>★ СОСТОЯНИЕ ★ Служба</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -993,7 +993,7 @@ Nome: SQL Server Integration Services 10.0&#13;
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Сервис</name>
+                        <name>★ СОСТОЯНИЕ ★ Служба</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -1030,17 +1030,17 @@ Nome: SQL Server Integration Services 10.0&#13;
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Сервис: MSSQLSERVER&#13;
+                    <description>Служба: MSSQLSERVER&#13;
 Имя: SQL Server ({$MSSQLSERVER})&#13;
 Описание: предлагает хранение, обработку и контролируемый доступ к данным, а также быструю обработку транзакций.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Сервисы ★</name>
+                            <name>★ Службы ★</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Сервис</name>
+                        <name>★ СОСТОЯНИЕ ★ Служба</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -1092,7 +1092,7 @@ Nome: SQL Server Integration Services 10.0&#13;
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
-                            <units>Conexões</units>
+                            <units>Соединения</units>
                             <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
@@ -1160,7 +1160,7 @@ Nome: SQL Server Integration Services 10.0&#13;
                             <inventory_link>0</inventory_link>
                             <applications/>
                             <valuemap>
-                                <name>★ STATUS ★ MSSQL Databases</name>
+                                <name>★ СОСТОЯНИЕ ★ MSSQL Databases</name>
                             </valuemap>
                             <logtimefmt/>
                             <application_prototypes>
@@ -1475,7 +1475,7 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</des
                                 </application>
                             </applications>
                             <valuemap>
-                                <name>★ STATUS ★ MSSQL Jobs</name>
+                                <name>★ СОСТОЯНИЕ ★ MSSQL Jobs</name>
                             </valuemap>
                             <logtimefmt/>
                             <application_prototypes/>
@@ -1945,20 +1945,20 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</des
     </graphs>
     <value_maps>
         <value_map>
-            <name>★ STATUS ★ Проверка порта</name>
+            <name>★ СОСТОЯНИЕ ★ Проверка Порта</name>
             <mappings>
                 <mapping>
                     <value>0</value>
-                    <newvalue>Inacessível</newvalue>
+                    <newvalue>Недоступный</newvalue>
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>Aberta</newvalue>
+                    <newvalue>Открыт</newvalue>
                 </mapping>
             </mappings>
         </value_map>
         <value_map>
-            <name>★ STATUS ★ MSSQL Databases</name>
+            <name>★ СОСТОЯНИЕ ★ MSSQL Databases</name>
             <mappings>
                 <mapping>
                     <value>0</value>
@@ -1995,7 +1995,7 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</des
             </mappings>
         </value_map>
         <value_map>
-            <name>★ STATUS ★ MSSQL Jobs</name>
+            <name>★ СОСТОЯНИЕ ★ MSSQL Jobs</name>
             <mappings>
                 <mapping>
                     <value>0</value>
@@ -2024,7 +2024,7 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</des
             </mappings>
         </value_map>
         <value_map>
-            <name>★ STATUS ★ Служба</name>
+            <name>★ СОСТОЯНИЕ ★ Служба</name>
             <mappings>
                 <mapping>
                     <value>0</value>
