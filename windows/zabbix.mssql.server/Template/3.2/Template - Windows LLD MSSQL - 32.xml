@@ -4,45 +4,45 @@
     <date>2018-01-04T14:21:16Z</date>
     <groups>
         <group>
-            <name>SEM GRUPO</name>
+            <name>БЕЗ ГРУППЫ</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>Template - Windows LLD MSSQL</template>
             <name>Template - Windows LLD MSSQL</name>
-            <description># Desenvolvido por Diego Cavalcante - 06/12/2017&#13;
-# Monitoramento Windows SQLServer</description>
+            <description># Разработано Diego Cavalcante - 06/12/2017&#13;
+# Мониторинг Windows SQLServer</description>
             <groups>
                 <group>
-                    <name>SEM GRUPO</name>
+                    <name>БЕЗ ГРУППЫ</name>
                 </group>
             </groups>
             <applications>
                 <application>
-                    <name>★ MSSQL ★ Estatísticas</name>
+                    <name>★ MSSQL ★ Статистика</name>
                 </application>
                 <application>
-                    <name>★ MSSQL ★ Geral</name>
+                    <name>★ MSSQL ★ Общий</name>
                 </application>
                 <application>
-                    <name>★ MSSQL ★ Jobs Status</name>
+                    <name>★ MSSQL ★ Статус заданий</name>
                 </application>
                 <application>
-                    <name>★ MSSQL ★ Memória</name>
+                    <name>★ MSSQL ★ Память</name>
                 </application>
                 <application>
-                    <name>★ Serviços ★</name>
+                    <name>★ Службы ★</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>Versão</name>
+                    <name>Версия</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>discovery.mssql.dados[VERSAO]</key>
+                    <key>discovery.mssql.dados[VERSION]</key>
                     <delay>86400</delay>
                     <history>15</history>
                     <trends>0</trends>
@@ -69,11 +69,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Versão do SQLServer.</description>
+                    <description>Версия SQLServer.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Geral</name>
+                            <name>★ MSSQL ★ Общий</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -112,15 +112,15 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Porta usada pelo MSSQL.</description>
+                    <description>Порт, используемый MSSQL.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Geral</name>
+                            <name>★ MSSQL ★ Общий</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Check Porta</name>
+                        <name>★ СТАТУС ★ Проверка Порта</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -161,14 +161,14 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Memória em Uso</name>
+                    <name>Используемая память</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -200,12 +200,12 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Memória Usada pelo SQL.&#13;
+                    <description>Память, используемая SQL.&#13;
 perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Memória</name>
+                            <name>★ MSSQL ★ Память</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -248,14 +248,14 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Memória</name>
+                            <name>★ MSSQL ★ Память</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Checkpoint Pages por (SEG)</name>
+                    <name>Страницы контрольных точек (SEG)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -291,14 +291,14 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Database Pages</name>
+                    <name>Страницы базы данных</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -334,14 +334,14 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Lazy Writes por (SEG)</name>
+                    <name>Отложенные записи (SEG)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -377,7 +377,7 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -420,7 +420,7 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -463,7 +463,7 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -506,14 +506,14 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Tamanho Total das Databases</name>
+                    <name>Общий размер баз данных</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>1</multiplier>
@@ -545,19 +545,19 @@ perf_counter[\Process(sqlservr)\Private Bytes]</description>
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Tamanho Total dos Bancos de Dados.&#13;
+                    <description>Общий размер баз данных.&#13;
 perf_counter[\{$MSSQLINST}:Databases(_Total)\Data File(s) Size (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Geral</name>
+                            <name>★ MSSQL ★ Общий</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Tamanho Total dos Logs</name>
+                    <name>Общий размер журнала</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>1</multiplier>
@@ -589,19 +589,19 @@ perf_counter[\{$MSSQLINST}:Databases(_Total)\Data File(s) Size (KB)]</descriptio
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Tamanho Total dos Logs.&#13;
+                    <description>Общий размер журнала.&#13;
 perf_counter[\{$MSSQLINST}:Databases(_Total)\Log File(s) Size (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Geral</name>
+                            <name>★ MSSQL ★ Общий</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Total de Conexões nas Databases</name>
+                    <name>Всего соединений к базам данных</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -633,19 +633,19 @@ perf_counter[\{$MSSQLINST}:Databases(_Total)\Log File(s) Size (KB)]</description
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Numero Total de Conexões nas Databases.&#13;
+                    <description>Общее количество соединений в базах данных.&#13;
 perf_counter[\{$MSSQLINST}:General Statistics\User Connections]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Lock Waits por (SEG)</name>
+                    <name>Lock Waits (SEG)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -681,14 +681,14 @@ perf_counter[\{$MSSQLINST}:General Statistics\User Connections]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Memória Grants Pending</name>
+                    <name>Ожидание предоставления памяти</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -724,14 +724,14 @@ perf_counter[\{$MSSQLINST}:General Statistics\User Connections]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Memória</name>
+                            <name>★ MSSQL ★ Память</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Memória em Cache</name>
+                    <name>Кэш-память</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>1</multiplier>
@@ -763,19 +763,19 @@ perf_counter[\{$MSSQLINST}:General Statistics\User Connections]</description>
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Memória em Cache do SQL.&#13;
+                    <description>Кэш-память SQL.&#13;
 perf_counter[\{$MSSQLINST}:Memory Manager\SQL Cache Memory (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Memória</name>
+                            <name>★ MSSQL ★ Память</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Memória Reservada</name>
+                    <name>Зарезервированная память</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>1</multiplier>
@@ -811,14 +811,14 @@ perf_counter[\{$MSSQLINST}:Memory Manager\SQL Cache Memory (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Memória</name>
+                            <name>★ MSSQL ★ Память</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Erros por (SEG)</name>
+                    <name>Ошибки (SEG)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -854,14 +854,14 @@ perf_counter[\{$MSSQLINST}:Memory Manager\SQL Cache Memory (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>SQL Compilations por (SEG)</name>
+                    <name>Компиляции SQL (SEG)</name>
                     <type>7</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -897,7 +897,7 @@ perf_counter[\{$MSSQLINST}:Memory Manager\SQL Cache Memory (KB)]</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ MSSQL ★ Estatísticas</name>
+                            <name>★ MSSQL ★ Статистика</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -936,17 +936,17 @@ perf_counter[\{$MSSQLINST}:Memory Manager\SQL Cache Memory (KB)]</description>
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Serviço: MsDtsServer100&#13;
+                    <description>Служба: MsDtsServer100&#13;
 Nome: SQL Server Integration Services 10.0&#13;
-Descrição: Oferece suporte de gerenciamento para armazenamento e execução de pacotes do SSIS.</description>
+Описание: обеспечивает поддержку управления хранением и выполнением пакетов служб SSIS.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Serviços ★</name>
+                            <name>★ Службы ★</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Serviço</name>
+                        <name>★ STATUS ★ Служба</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -983,17 +983,17 @@ Descrição: Oferece suporte de gerenciamento para armazenamento e execução de
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Serviço: SQLSERVERAGENT&#13;
-Nome: SQL Server Agent ({$MSSQLAGENT})&#13;
-Descrição: Executa tarefas, monitora o SQL Server, dispara alertas e permite a automação de algumas tarefas administrativas.</description>
+                    <description>Служба: SQLSERVERAGENT&#13;
+Имя: SQL Server Agent ({$MSSQLAGENT})&#13;
+Описание: выполняет задачи, контролирует SQL Server, вызывает оповещения и позволяет автоматизировать некоторые административные задачи.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Serviços ★</name>
+                            <name>★ Сервисы ★</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Serviço</name>
+                        <name>★ STATUS ★ Сервис</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
@@ -1030,24 +1030,24 @@ Descrição: Executa tarefas, monitora o SQL Server, dispara alertas e permite a
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>Serviço: MSSQLSERVER&#13;
-Nome: SQL Server ({$MSSQLSERVER})&#13;
-Descrição: Oferece armazenamento, processamento e acesso controlado de dados e processamento rápido de transações.</description>
+                    <description>Сервис: MSSQLSERVER&#13;
+Имя: SQL Server ({$MSSQLSERVER})&#13;
+Описание: предлагает хранение, обработку и контролируемый доступ к данным, а также быструю обработку транзакций.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>★ Serviços ★</name>
+                            <name>★ Сервисы ★</name>
                         </application>
                     </applications>
                     <valuemap>
-                        <name>★ STATUS ★ Serviço</name>
+                        <name>★ STATUS ★ Сервис</name>
                     </valuemap>
                     <logtimefmt/>
                 </item>
             </items>
             <discovery_rules>
                 <discovery_rule>
-                    <name>★ Descoberta ★ MSSQL Databases</name>
+                    <name>★ Обнаружение ★ MSSQL Databases</name>
                     <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -1077,10 +1077,10 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                         <conditions/>
                     </filter>
                     <lifetime>1</lifetime>
-                    <description>Descoberta de Bancos de Dados MSSQL Server</description>
+                    <description>Обнаружение базы данных MSSQL Server</description>
                     <item_prototypes>
                         <item_prototype>
-                            <name>{#MSSQLDBNAME} Número de Conexões</name>
+                            <name>{#MSSQLDBNAME} Количество соединений</name>
                             <type>7</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
@@ -1112,7 +1112,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Numero de Conexões na Database MSSQL - {#MSSQLDBNAME}</description>
+                            <description>Количество соединений с базой данных MSSQL - {#MSSQLDBNAME}</description>
                             <inventory_link>0</inventory_link>
                             <applications/>
                             <valuemap/>
@@ -1156,7 +1156,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Monitora o Status da Database MSSQL - {#MSSQLDBNAME}</description>
+                            <description>Мониторинг состояния базы данных MSSQL - {#MSSQLDBNAME}</description>
                             <inventory_link>0</inventory_link>
                             <applications/>
                             <valuemap>
@@ -1170,7 +1170,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                             </application_prototypes>
                         </item_prototype>
                         <item_prototype>
-                            <name>{#MSSQLDBNAME} Tamanho da Database</name>
+                            <name>{#MSSQLDBNAME} Размер базы данных</name>
                             <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
@@ -1202,7 +1202,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Detecta o Tamanho Total do Banco.&#13;
+                            <description>Определяет общий размер базы.&#13;
 perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Data File(s) Size (KB)]</description>
                             <inventory_link>0</inventory_link>
                             <applications/>
@@ -1215,7 +1215,7 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Data File(s) Size (KB)]</de
                             </application_prototypes>
                         </item_prototype>
                         <item_prototype>
-                            <name>{#MSSQLDBNAME} Tamanho do Log</name>
+                            <name>{#MSSQLDBNAME} Размер журнала</name>
                             <type>7</type>
                             <snmp_community/>
                             <multiplier>1</multiplier>
@@ -1247,7 +1247,7 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Data File(s) Size (KB)]</de
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Tamanho Total do Arquivo de Log.&#13;
+                            <description>Общий размер файла журнала.&#13;
 perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</description>
                             <inventory_link>0</inventory_link>
                             <applications/>
@@ -1272,17 +1272,17 @@ perf_counter[\{$MSSQLINST}:Databases({#MSSQLDBNAME})\Log File(s) Size (KB)]</des
                             <status>0</status>
                             <priority>4</priority>
                             <description>SQLServer&#13;
-Status da Database {#MSSQLDBNAME} é {ITEM.LASTVALUE}&#13;
+Статус базы данных {#MSSQLDBNAME} это {ITEM.LASTVALUE}&#13;
 &#13;
-Status Possíveis:&#13;
+Возможный статус:&#13;
 0 ⇒ ONLINE&#13;
-1 ⇒ RESTAURAÇÃO&#13;
-2 ⇒ RECUPERANDO&#13;
-3 ⇒ RECUPERAÇÃO PENDENTE&#13;
-4 ⇒ SUSPEITO&#13;
-5 ⇒ EMERGÊNCIA&#13;
+1 ⇒ RESTORING&#13;
+2 ⇒ RECOVERING&#13;
+3 ⇒ RECOVERY PENDING&#13;
+4 ⇒ SUSPECT&#13;
+5 ⇒ EMERGENCY&#13;
 6 ⇒ OFFLINE&#13;
-7 ⇒ NÃO EXISTE</description>
+7 ⇒ НЕ СУЩЕСТВУЕТ</description>
                             <type>0</type>
                             <manual_close>0</manual_close>
                             <dependencies/>
@@ -1291,7 +1291,7 @@ Status Possíveis:&#13;
                     </trigger_prototypes>
                     <graph_prototypes>
                         <graph_prototype>
-                            <name>★ MSSQL ★ Número de Conexões em {#MSSQLDBNAME}</name>
+                            <name>★ MSSQL ★ Количество соединений в {#MSSQLDBNAME}</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1323,7 +1323,7 @@ Status Possíveis:&#13;
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>★ MSSQL ★ Status em {#MSSQLDBNAME}</name>
+                            <name>★ MSSQL ★ Статус {#MSSQLDBNAME}</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1355,7 +1355,7 @@ Status Possíveis:&#13;
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>★ MSSQL ★ Tamanho da Database e Log em {#MSSQLDBNAME}</name>
+                            <name>★ MSSQL ★ Размер базы данных и журнала {#MSSQLDBNAME}</name>
                             <width>900</width>
                             <height>200</height>
                             <yaxismin>0.0000</yaxismin>
@@ -1402,7 +1402,7 @@ Status Possíveis:&#13;
                     <host_prototypes/>
                 </discovery_rule>
                 <discovery_rule>
-                    <name>★ Descoberta ★ MSSQL Jobs</name>
+                    <name>★ Обнаружение ★ MSSQL Jobs</name>
                     <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -1432,7 +1432,7 @@ Status Possíveis:&#13;
                         <conditions/>
                     </filter>
                     <lifetime>1</lifetime>
-                    <description>Descoberta de Jobs do MSSQL Server</description>
+                    <description>Обнаружение заданий SQL Server</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>Job {#MSSQLJOBNAME} Status</name>
@@ -1467,7 +1467,7 @@ Status Possíveis:&#13;
                             <publickey/>
                             <privatekey/>
                             <port/>
-                            <description>Monitora Status dos Jobs SQLSERVER.</description>
+                            <description>Мониторинг статуса заданий SQLSERVER.</description>
                             <inventory_link>0</inventory_link>
                             <applications>
                                 <application>
@@ -1493,15 +1493,15 @@ Status Possíveis:&#13;
                             <status>0</status>
                             <priority>4</priority>
                             <description>SQLServer&#13;
-Status do Job {#MSSQLJOBNAME} é {ITEM.LASTVALUE}&#13;
+Статус заданий{#MSSQLJOBNAME} это {ITEM.LASTVALUE}&#13;
 &#13;
-Status Possíveis:&#13;
-0 = Falha&#13;
-1 = Sucesso&#13;
-2 = Repetir&#13;
-3 = Cancelado&#13;
-4 = Em Progresso&#13;
-5 = Nunca Executado</description>
+Возможный статус:&#13;
+0 = Отказ&#13;
+1 = Успех&#13;
+2 = Повтор&#13;
+3 = Отмена&#13;
+4 = Незавершено&#13;
+5 = Не запускалось</description>
                             <type>0</type>
                             <manual_close>0</manual_close>
                             <dependencies/>
@@ -1518,15 +1518,15 @@ Status Possíveis:&#13;
                             <status>0</status>
                             <priority>1</priority>
                             <description>SQLServer&#13;
-Status do Job {#MSSQLJOBNAME} é {ITEM.LASTVALUE}&#13;
+Статус заданий{#MSSQLJOBNAME} это {ITEM.LASTVALUE}&#13;
 &#13;
-Status Possíveis:&#13;
-0 = Falha&#13;
-1 = Sucesso&#13;
-2 = Repetir&#13;
-3 = Cancelado&#13;
-4 = Em Progresso&#13;
-5 = Nunca Executado</description>
+Возможный статус:&#13;
+0 = Отказ&#13;
+1 = Успех&#13;
+2 = Повтор&#13;
+3 = Отмена&#13;
+4 = Незавершено&#13;
+5 = Не запускалось</description>
                             <type>0</type>
                             <manual_close>0</manual_close>
                             <dependencies/>
@@ -1543,15 +1543,15 @@ Status Possíveis:&#13;
                             <status>0</status>
                             <priority>2</priority>
                             <description>SQLServer&#13;
-Status do Job {#MSSQLJOBNAME} é {ITEM.LASTVALUE}&#13;
+Статус заданий{#MSSQLJOBNAME} это {ITEM.LASTVALUE}&#13;
 &#13;
-Status Possíveis:&#13;
-0 = Falha&#13;
-1 = Sucesso&#13;
-2 = Repetir&#13;
-3 = Cancelado&#13;
-4 = Em Progresso&#13;
-5 = Nunca Executado</description>
+Возможный статус:&#13;
+0 = Отказ&#13;
+1 = Успех&#13;
+2 = Повтор&#13;
+3 = Отмена&#13;
+4 = Незавершено&#13;
+5 = Не запускалось</description>
                             <type>0</type>
                             <manual_close>0</manual_close>
                             <dependencies/>
@@ -1568,15 +1568,15 @@ Status Possíveis:&#13;
                             <status>0</status>
                             <priority>3</priority>
                             <description>SQLServer&#13;
-Status do Job {#MSSQLJOBNAME} é {ITEM.LASTVALUE}&#13;
+Статус заданий{#MSSQLJOBNAME} это {ITEM.LASTVALUE}&#13;
 &#13;
-Status Possíveis:&#13;
-0 = Falha&#13;
-1 = Sucesso&#13;
-2 = Repetir&#13;
-3 = Cancelado&#13;
-4 = Em Progresso&#13;
-5 = Nunca Executado</description>
+Возможный статус:&#13;
+0 = Отказ&#13;
+1 = Успех&#13;
+2 = Повтор&#13;
+3 = Отмена&#13;
+4 = Незавершено&#13;
+5 = Не запускалось</description>
                             <type>0</type>
                             <manual_close>0</manual_close>
                             <dependencies/>
@@ -1598,13 +1598,13 @@ Status Possíveis:&#13;
             <expression>{Template - Windows LLD MSSQL:net.tcp.port[,{$MSSQLPORTA}].last(0)}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>MSSQL Porta ({ITEM.LASTVALUE})</name>
+            <name>Порт MSSQL ({ITEM.LASTVALUE})</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Porta MSSQL Fechada</description>
+            <description>Порт MSSQL закрыт</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -1620,9 +1620,9 @@ Status Possíveis:&#13;
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Serviço: SQLSERVERAGENT&#13;
-Nome: SQL Server Agent ({$MSSQLAGENT})&#13;
-Descrição: Executa tarefas, monitora o SQL Server, dispara alertas e permite a automação de algumas tarefas administrativas.</description>
+            <description>Служба: SQLSERVERAGENT&#13;
+Имя: SQL Server Agent ({$MSSQLAGENT})&#13;
+Описание: выполняет задачи, контролирует SQL Server, запускает оповещения и позволяет автоматизировать некоторые административные задачи..</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -1638,9 +1638,9 @@ Descrição: Executa tarefas, monitora o SQL Server, dispara alertas e permite a
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Serviço: MsDtsServer100&#13;
-Nome: SQL Server Integration Services 10.0&#13;
-Descrição: Oferece suporte de gerenciamento para armazenamento e execução de pacotes do SSIS.</description>
+            <description>Служба: MsDtsServer100&#13;
+Имя: SQL Server Integration Services 10.0&#13;
+Описание: обеспечивает поддержку управления хранением и выполнением пакетов служб SSIS.</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -1656,9 +1656,9 @@ Descrição: Oferece suporte de gerenciamento para armazenamento e execução de
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description>Serviço: MSSQLSERVER&#13;
-Nome: SQL Server ({$MSSQLSERVER})&#13;
-Descrição: Oferece armazenamento, processamento e acesso controlado de dados e processamento rápido de transações.</description>
+            <description>Служба: MSSQLSERVER&#13;
+Имя: SQL Server ({$MSSQLSERVER})&#13;
+Описание: предлагает хранение, обработку и контролируемый доступ к данным, а также быструю обработку транзакций.</description>
             <type>0</type>
             <manual_close>1</manual_close>
             <dependencies/>
@@ -1667,7 +1667,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
     </triggers>
     <graphs>
         <graph>
-            <name>★ MSSQL ★ Estatísticas</name>
+            <name>★ MSSQL ★ Статистика</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1819,7 +1819,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
             </graph_items>
         </graph>
         <graph>
-            <name>★ MSSQL ★ Tamanho Total das Databases e Logs</name>
+            <name>★ MSSQL ★ Общий размер баз данных и журналов</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1863,7 +1863,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
             </graph_items>
         </graph>
         <graph>
-            <name>★ MSSQL ★ Uso de Memória</name>
+            <name>★ MSSQL ★ Использование памяти</name>
             <width>900</width>
             <height>200</height>
             <yaxismin>0.0000</yaxismin>
@@ -1945,7 +1945,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
     </graphs>
     <value_maps>
         <value_map>
-            <name>★ STATUS ★ Check Porta</name>
+            <name>★ STATUS ★ Проверка порта</name>
             <mappings>
                 <mapping>
                     <value>0</value>
@@ -1966,23 +1966,23 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>RESTAURAÇÃO</newvalue>
+                    <newvalue>RESTORING</newvalue>
                 </mapping>
                 <mapping>
                     <value>2</value>
-                    <newvalue>RECUPERANDO</newvalue>
+                    <newvalue>RECOVERING</newvalue>
                 </mapping>
                 <mapping>
                     <value>3</value>
-                    <newvalue>RECUPERAÇÃO PENDENTE</newvalue>
+                    <newvalue>RECOVERY PENDING</newvalue>
                 </mapping>
                 <mapping>
                     <value>4</value>
-                    <newvalue>SUSPEITO</newvalue>
+                    <newvalue>SUSPECT</newvalue>
                 </mapping>
                 <mapping>
                     <value>5</value>
-                    <newvalue>EMERGÊNCIA</newvalue>
+                    <newvalue>EMERGENCY</newvalue>
                 </mapping>
                 <mapping>
                     <value>6</value>
@@ -1990,7 +1990,7 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
                 </mapping>
                 <mapping>
                     <value>7</value>
-                    <newvalue>NÃO EXISTE</newvalue>
+                    <newvalue>НЕ СУЩЕСТВУЕТ</newvalue>
                 </mapping>
             </mappings>
         </value_map>
@@ -1999,68 +1999,68 @@ Descrição: Oferece armazenamento, processamento e acesso controlado de dados e
             <mappings>
                 <mapping>
                     <value>0</value>
-                    <newvalue>Falha</newvalue>
+                    <newvalue>Отказ</newvalue>
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>Sucesso</newvalue>
+                    <newvalue>Успех</newvalue>
                 </mapping>
                 <mapping>
                     <value>2</value>
-                    <newvalue>Repetir</newvalue>
+                    <newvalue>Повтор</newvalue>
                 </mapping>
                 <mapping>
                     <value>3</value>
-                    <newvalue>Cancelado</newvalue>
+                    <newvalue>Отмена</newvalue>
                 </mapping>
                 <mapping>
                     <value>4</value>
-                    <newvalue>Em Progresso</newvalue>
+                    <newvalue>Незавершено</newvalue>
                 </mapping>
                 <mapping>
                     <value>5</value>
-                    <newvalue>Nunca Executado</newvalue>
+                    <newvalue>Не запускалось</newvalue>
                 </mapping>
             </mappings>
         </value_map>
         <value_map>
-            <name>★ STATUS ★ Serviço</name>
+            <name>★ STATUS ★ Служба</name>
             <mappings>
                 <mapping>
                     <value>0</value>
-                    <newvalue>Iniciado</newvalue>
+                    <newvalue>запущена</newvalue>
                 </mapping>
                 <mapping>
                     <value>1</value>
-                    <newvalue>Pausado</newvalue>
+                    <newvalue>пауза</newvalue>
                 </mapping>
                 <mapping>
                     <value>2</value>
-                    <newvalue>Iniciar Pendente</newvalue>
+                    <newvalue>ожидание старта</newvalue>
                 </mapping>
                 <mapping>
                     <value>3</value>
-                    <newvalue>Pausa Pendente</newvalue>
+                    <newvalue>ожидание паузы</newvalue>
                 </mapping>
                 <mapping>
                     <value>4</value>
-                    <newvalue>Continuar Pendente</newvalue>
+                    <newvalue>ожидание продолжения</newvalue>
                 </mapping>
                 <mapping>
                     <value>5</value>
-                    <newvalue>Parar Pendente</newvalue>
+                    <newvalue>ожидание остановки</newvalue>
                 </mapping>
                 <mapping>
                     <value>6</value>
-                    <newvalue>Parado</newvalue>
+                    <newvalue>остановлена</newvalue>
                 </mapping>
                 <mapping>
                     <value>7</value>
-                    <newvalue>Desconhecido</newvalue>
+                    <newvalue>неизвестно</newvalue>
                 </mapping>
                 <mapping>
                     <value>255</value>
-                    <newvalue>Desconhecido</newvalue>
+                    <newvalue>такой службы не существует</newvalue>
                 </mapping>
             </mappings>
         </value_map>
