@@ -123,7 +123,7 @@ WHERE jobs.name = '$2'" | % {$_.substring($_.length-1) -replace ''} | ForEach-Ob
 }
 
 # Проверка версии SQLServer.
-if ( $select -eq 'VERSAO' )
+if ( $select -eq 'VERSION' )
 {
 sqlcmd -d Master -U $usuario -P $senha -h -1 -W -Q "set nocount on;SELECT
    SERVERPROPERTY ( 'ProductVersion' ),
